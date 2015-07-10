@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="EJBProject">
+		<jta-data-source>dbConn</jta-data-source>
+		<class>br.com.msystem.entidade.Acesso</class>
+		<class>br.com.msystem.entidade.Agenda</class>
+		<class>br.com.msystem.entidade.Assistencia</class>
+		<class>br.com.msystem.entidade.AssistenciaEquip</class>
+		<class>br.com.msystem.entidade.AssistenciaItem</class>
+		<class>br.com.msystem.entidade.Balanco</class>
+		<class>br.com.msystem.entidade.BalancoContagem</class>
+		<class>br.com.msystem.entidade.BalancoContagemProduto</class>
+		<class>br.com.msystem.entidade.CartaCorrecao</class>
+		<class>br.com.msystem.entidade.Classificacao</class>
+		<class>br.com.msystem.entidade.Cliente</class>
+		<class>br.com.msystem.entidade.CondPagto</class>
+		<class>br.com.msystem.entidade.ContaBanco</class>
+		<class>br.com.msystem.entidade.ContaPagar</class>
+		<class>br.com.msystem.entidade.ContaPagarAuto</class>
+		<class>br.com.msystem.entidade.ContaPagarPgto</class>
+		<class>br.com.msystem.entidade.Contato</class>
+		<class>br.com.msystem.entidade.Conteiner</class>
+		<class>br.com.msystem.entidade.ConteinerItem</class>
+		<class>br.com.msystem.entidade.Duplicata</class>
+		<class>br.com.msystem.entidade.DuplicataPgto</class>
+		<class>br.com.msystem.entidade.Empresa</class>
+		<class>br.com.msystem.entidade.Estado</class>
+		<class>br.com.msystem.entidade.EstadoIva</class>
+		<class>br.com.msystem.entidade.Fornecedor</class>
+		<class>br.com.msystem.entidade.HistoricoAcesso</class>
+		<class>br.com.msystem.entidade.HistoricoAlteracao</class>
+		<class>br.com.msystem.entidade.HistoricoLogin</class>
+		<class>br.com.msystem.entidade.Kardex</class>
+		<class>br.com.msystem.entidade.Linha</class>
+		<class>br.com.msystem.entidade.Modelo</class>
+		<class>br.com.msystem.entidade.Natureza</class>
+		<class>br.com.msystem.entidade.Nbm</class>
+		<class>br.com.msystem.entidade.NfEntrada</class>
+		<class>br.com.msystem.entidade.NfEntradaItem</class>
+		<class>br.com.msystem.entidade.Nfiscal</class>
+		<class>br.com.msystem.entidade.NfiscalItem</class>
+		<class>br.com.msystem.entidade.NfiscalItemAdicao</class>
+		<class>br.com.msystem.entidade.NfiscalItemSerie</class>
+		<class>br.com.msystem.entidade.NfServico</class>
+		<class>br.com.msystem.entidade.Notificacao</class>
+		<class>br.com.msystem.entidade.Pedido</class>
+		<class>br.com.msystem.entidade.PedidoItem</class>
+		<class>br.com.msystem.entidade.PedidoItemSerie</class>
+		<class>br.com.msystem.entidade.Produto</class>
+		<class>br.com.msystem.entidade.ProdutoImagem</class>
+		<class>br.com.msystem.entidade.ProdutoFaltante</class>
+		<class>br.com.msystem.entidade.ProdutoNumeroSerie</class>
+		<class>br.com.msystem.entidade.Rma</class>
+		<class>br.com.msystem.entidade.RmaItem</class>
+		<class>br.com.msystem.entidade.TipoCliente</class>
+		<class>br.com.msystem.entidade.Transportadora</class>
+		<class>br.com.msystem.entidade.Usuario</class>
+		<class>br.com.msystem.entidade.Vendedor</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<shared-cache-mode>NONE</shared-cache-mode>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE"/>
+<!-- 
+			<property name="eclipselink.logging.parameters" value="true"/>
+ -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+		</properties>
+	</persistence-unit>
+</persistence>

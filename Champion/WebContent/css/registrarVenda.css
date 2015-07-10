@@ -1,0 +1,103 @@
+div#right {
+	width: 80%;
+	height: 100%;
+	right: 0;
+	top: 60;
+	position: absolute;
+}
+
+div#controls {
+	height: 55px;
+}
+
+div#visualizarPedido #tableDiv {
+	overflow-y: scroll;
+	height: 300px;
+}
+
+div#divFinalizarPedido {
+	display: none;
+	background-color: white;
+	padding: 30px;
+	position: absolute;
+	border-style: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+	text-align: left;
+}
+
+div#thumbs {
+	width: 40%;
+	float: left;
+	opacity: 1;
+}
+
+div#treeModelo {
+	width: 20%;
+	height: 100%;
+	left: 0;
+	top: 60;
+	position: absolute;
+}
+
+table#listaProduto {
+	border-collapse: collapse;
+}
+
+table#listaProduto tr {
+	border: 1px solid;
+}
+
+table#listaProduto td {
+	padding: 15px;
+}
+
+table#listaProduto tbody td.precoUnit,table#listaProduto tfoot td#totalPedido
+	{
+	text-align: right;
+}
+
+table#listaPRoduto tfoot td {
+	font-weight: bold;
+}
+
+div#top_right {
+	float: right;
+}
+
+label#total_carrinho {
+	font-size: large;
+}
+
+img.visualizarPedido {
+	cursor: pointer;
+}
+
+img.incluirItem {
+	cursor: pointer;
+	float: left;
+}
+
+form#completarPedido label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+	color: red;
+	font-style: italic
+}
+
+#closebutton {
+	position: absolute;
+	top: -20px;
+	right: 14px;
+	cursor: pointer;
+}
+
+input#completarPedido, img#imgFinalizarPedido {
+	float: right;
+}
+
+ul#condPagto
+{
+list-style-type:none;
+}

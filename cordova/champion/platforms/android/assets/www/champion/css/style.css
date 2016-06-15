@@ -1,0 +1,29 @@
+fieldset {
+	width: 90%;
+	height: 90%;
+}
+
+.inputForm label {
+	width: 30%;
+	display: inline-block;
+/*
+	float: left;
+*/
+	margin-top: 3px;
+}
+
+.inputForm input {
+	height: 100%;
+	width: 65%;
+}
+
+.inputForm button {
+	height: 80%;
+}
+
+div.field {
+	width: 100%;
+	box-sizing: border-box;
+	height: 25%;
+	padding: 5px 8px;
+}

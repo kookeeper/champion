@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+</head>
+<body>
+	<div id="authorize-div" style="display: none">
+		<span>Authorize access to Drive API</span>
+		<!--Button for the user to click to initiate auth sequence -->
+		<button id="authorize-button" onclick="handleAuthClick(event);">
+			Authorize</button>
+	</div>
+	<div id="incluir">
+		<form class="inputForm" onsubmit="Adicionar();">
+			<fieldset>
+				<legend>Registro venda</legend>
+				<div class="field">
+					<label class="field" for="dataVenda">Data</label><input
+						id="dataVenda" required="true">
+					</div>
+				<div class="field">
+					<label class="field" for="valorVenda">Valor</label><input
+						id="valorVenda" required="true" type="number" step="any" min="0" autofocus>
+					</div>
+				<div class="field">
+					<label class="field" for="VendedorVenda">Vend.</label><input
+						id="vendedorVenda" required="true">
+					</div>
+				<div class="field">
+					<button type="submit">Registrar Venda</button>
+					</div>
+			</fieldset>
+		</form>
+	</div>
+	<table id="tabela"></table>
+	<pre id="output"></pre>
+</body>
+</html>

@@ -8,10 +8,10 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.registrovenda"
+            "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "com.rjfun.cordova.httpd": {
-            "PACKAGE_NAME": "io.cordova.registrovenda"
+            "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
     "dependent_plugins": {}

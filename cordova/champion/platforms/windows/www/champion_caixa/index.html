@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<link rel="stylesheet"
+        href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+</head>
+<body>
+	<div id="authorize-div" style="display: none">
+		<span>Authorize access to Drive API</span>
+		<!--Button for the user to click to initiate auth sequence -->
+		<button id="authorize-button" onclick="handleAuthClick(event)">
+			Authorize</button>
+	</div>
+	<div id="incluir">
+		<form class="inputForm" onsubmit="Adicionar()">
+			<fieldset>
+				<legend>Registro de venda</legend>
+				<p>
+					<label class="field" for="dataVenda">Data da Venda</label><input
+						id="dataVenda" required="true">
+				<p>
+					<label class="field" for="valorVenda">Valor da Venda</label><input
+						id="valorVenda" required="true" type="number" autofocus>
+				<p>
+					<label class="field" for="VendedorVenda">Vendedor</label><input
+						id="vendedorVenda" required="true">
+				<p>
+					<button type="submit">Registrar Venda</button>
+			</fieldset>
+		</form>
+	</div>
+	<table id="tabela"></table>
+	<pre id="output"></pre>
+	<script language="JavaScript">
+		var tbCustomer = localStorage.getItem("tbCustomer");// Recupera os dados armazenados
+		tbCustomer = JSON.parse(tbCustomer); // Converte string para objeto
+		if (tbCustomer == null) // Caso não haja conteúdo, iniciamos um vetor vazio
+			tbCustomer = [];
+	</script>
+</body>
+</html>

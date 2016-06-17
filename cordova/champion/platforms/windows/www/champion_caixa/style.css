@@ -1,0 +1,37 @@
+﻿fieldset {
+	width: 500px;
+}
+
+legend {
+	font-size: 20px;
+}
+/*
+label.field {
+	text-align: right;
+	width: 30%;
+	float: left;
+	font-weight: bold;
+}
+*/
+fieldset p {
+	clear: both;
+	padding: 5px;
+}
+
+.inputForm label {
+	width: 150px;
+	margin-top: 3px;
+	display: inline-block;
+	float: left;
+	padding: 3px;
+}
+
+.inputForm input {
+	height: 20px;
+	width: 220px;
+	padding: 5px 8px;
+}
+
+.inputForm button {
+	margin-left: 156px;
+}

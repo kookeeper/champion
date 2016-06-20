@@ -6,9 +6,6 @@ fieldset {
 .inputForm label {
 	width: 30%;
 	display: inline-block;
-/*
-	float: left;
-*/
 	margin-top: 3px;
 }
 
